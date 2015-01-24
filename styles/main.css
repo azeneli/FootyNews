@@ -1,0 +1,352 @@
+/* CURRENTLY IN: styles/main.css */
+
+/**  ClearFix class  *****
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+body {
+	background-color: #507796 !important;
+}
+
+ul {
+  	padding: 0 !important;
+}
+
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+/***********  Remove at completion of project 
+
+.ui.dropdown.item {
+	float: right;
+}
+
+.ui .menu {
+	border-radius: 0px !important;
+}
+
+/* Main Section 
+.ui.secondary.pointing.three.item.demo.menu {
+	padding: 2.5rem 0 0 0;
+}    *****************/
+
+
+/******** header styling ********/
+
+
+svg#logo {
+	float: left;
+}
+
+.header__styling {
+	border-bottom: 1px solid black;
+	background: white;
+}
+
+.header__title {
+	float: left;
+	cursor: pointer;
+	color: #D1625B;
+	opacity: 1;
+	transition: color 05s ease: 0s;
+}
+
+/*.header__border {
+	border-right: 2px solid gray; 
+	padding: 0 1rem 0 0;
+}*/
+
+.header__title:hover {
+	/*color: #507796;*/
+	opacity: 0.7;
+}
+
+.nav__menu {
+	margin: 2.3rem 0 0 0;
+	float: right;
+	width: 350px;
+}
+
+li.nav-options {
+	float: left;
+	margin-right: 3%;
+	/*text-decoration: none;*/
+}
+
+
+
+.remove__default-styling {
+	list-style: none;
+}
+
+.li__styling {
+	color: #D1625B;
+	border-bottom: 1px solid white;
+	font-size: 1.3rem;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+#dropdown {
+	cursor: pointer;
+}
+
+/*#drop-menu {
+	display: none;
+}*/
+
+.dropdown__title {
+	color: #D1625B;
+}
+
+/******* Custom Grid Styling *******/
+
+.col__3-mid {
+	float: left;
+	width: 31%;
+	margin: 1% 1% 0 1%;
+}
+
+.newsbox__title {
+	background-color: #ccc;
+	border: 1px solid #507796;
+	border-radius: 20px;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	padding: 1rem;
+	transition: color 0.5s ease; 
+			
+}
+
+.newsbox__title:hover {
+	color: #D1625B;
+}
+
+/*.newsbox__title-transition {
+	transition: color .3s;
+		-webkit-transition: color .3s;
+			-moz-transition: color .3s;
+}*/
+
+.newsholding__column {
+	background-color: white;
+	border: 1px solid #507796;
+	border-radius: 15px;
+	color: #507796;
+	cursor: pointer;
+	padding: 0.5rem 1rem 1rem 1rem;
+	margin-top: 0.5rem;
+	list-style: none;
+	overflow: scroll;
+	width: 100%;
+}
+
+.newsholding__column:hover {
+	color: #D1625B;
+}
+
+/*.remove-padding {
+	padding: 0 !important;
+}
+*/
+.expanded-menu .menu-trigger.active {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 9;
+}
+.expanded-menu{
+	width: 100%;
+	height: 100%;
+	right: -100%;
+	position: fixed;
+	top: 0;
+}
+.expanded-menu .menu-links{
+	position: absolute;
+	top: 0px;
+	background: rgba(52, 73, 94, 0.9);
+	height: 100%;
+	width: 25%;
+	z-index: 10;
+	right: 0;
+}
+
+.overflow-container {
+	overflow-y: scroll;
+	/*background-color: white; */
+	height: 450px;
+	padding: 0 1rem 0 0;
+}
+
+
+
+/************ About Page **************/
+
+.about-us {
+	margin: 0 auto;
+	width: 50%;
+	padding: 7rem 0 0 0;
+	text-align: left;
+	border: 1px; 
+}
+
+.about__header {
+	background-color: #61e69d;
+	border: 2px solid #507796;
+	border-radius: 1rem;
+	padding: 0 2rem 2rem 2rem;
+}
+
+.about__title {
+	text-align: left;
+	font-size: 3rem;
+	color: white;
+}
+
+.about__content {
+	color: white;
+}
+
+.back-image {
+	/*background-color: #507796;*/
+	/*background: url(http://worldcupq.com/wp-content/uploads/2014/09/soccer-backgroundsse-entertainment-5ffppqf8.jpg); 
+	background-position: center top, left top;
+	background-repeat: no-repeat, repeat-y;*/
+}
+
+
+
+/***************   Contact Form *************/
+
+/* Basic Grey */
+.basic-grey {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #F7F7F7;
+    padding: 25px 15px 25px 10px;
+    font: 12px Georgia, "Times New Roman", Times, serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #E4E4E4;
+}
+.basic-grey h1 {
+    font-size: 25px;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom:1px solid #E4E4E4;
+    margin: -10px -15px 30px -10px;;
+    color: #888;
+}
+.basic-grey h1>span {
+    display: block;
+    font-size: 11px;
+}
+.basic-grey label {
+    display: block;
+    margin: 0px;
+}
+.basic-grey label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: #888;
+}
+.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey textarea, .basic-grey select {
+    border: 1px solid #DADADA;
+    color: #888;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;
+    font-size: 12px;
+    line-height:15px;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+.basic-grey textarea{
+    padding: 5px 3px 3px 5px;
+}
+.basic-grey select {
+    background: #FFF url('down-arrow.png') no-repeat right;
+    background: #FFF url('down-arrow.png') no-repeat right);
+    appearance:none;
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+    line-height: 25px;
+}
+.basic-grey textarea{
+    height:100px;
+}
+.basic-grey .button {
+    background: #E27575;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+}
+.basic-grey .button:hover {
+    background: #CF7A7A
+}
+
+
+.tab-content {
+	padding: 7rem 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
