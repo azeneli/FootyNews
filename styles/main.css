@@ -101,6 +101,10 @@ li.nav-options {
 	/*text-decoration: none;*/
 }
 
+.custom__style:hover {
+	text-decoration: none;
+	color: #D1625B;
+}
 
 
 .remove__default-styling {
